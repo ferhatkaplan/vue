@@ -11,7 +11,7 @@
 <body>
     <div id="app">
     <input type="text" v-model="todo" @keydown.enter="addTodo">
-        
+<div v-if="todoList.length > 0 "> 
 <ul>
     <li v-for="todo in todoList" :key="todo.id">
     <input type="checkbox" name="" id="" v-model="todo.completed">
@@ -19,6 +19,8 @@
     <button @click="deleteTodo(todo)">Delete</button>
     </li>
 </ul>
+</div> 
+<div v-else>Todo bulunamamaktadır </div>
 <div>
     <small>Tamalanmayan görevler:{{notCountItem}}</small>
     <small>Tamamlanan görevler:{{countItem}}</small>

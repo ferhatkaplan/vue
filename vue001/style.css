@@ -1,4 +1,27 @@
-.completed-item{
-    text-decoration: line-through;
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Poppins:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Amatic SC";
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+.completed-item {
+  text-decoration: line-through;
 }
 
+.ul{
+    background-color: blue;
+}
+
+button{
+    width: 15%;
+    font-size: 16px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    color: black;
+    background-color: #F745;
+    outline: none;  
+}
